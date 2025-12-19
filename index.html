@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online CSV Viewer - Secure & Instant</title>
+    <meta name="description" content="A free, secure, and fast online CSV viewer. Open and read CSV files directly in your browser without uploading data to any server. No signup required.">
+    <meta name="keywords" content="online csv viewer, csv viewer, online csv reader, open csv file, free csv tool, secure csv viewer, no backend">
+    <meta name="author" content="online-csv-viewer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online CSV Viewer - Secure & Instant">
+    <meta property="og:description" content="Open and read CSV files directly in your browser. 100% secure, no data upload.">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+    <header id="app-header">
+        <div class="header-content">
+            <h1>CSV Viewer</h1>
+            <label for="csvFileInput" class="upload-btn">
+                Select CSV File
+                <input type="file" id="csvFileInput" accept=".csv" />
+            </label>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <div id="placeholder" class="placeholder">
+            <p>Upload a CSV file to view data securely in your browser.</p>
+        </div>
+        <div id="table-wrapper" class="table-wrapper hidden">
+            <!-- Table will be injected here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
